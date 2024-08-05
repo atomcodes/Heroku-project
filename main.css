@@ -1,0 +1,216 @@
+@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+header {
+  background-color: #047aed;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+nav p {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.mobile {
+  display: none;
+}
+.items {
+  background-color: #ffffff;
+  margin-top: 5px;
+  width: 45px;
+  height: 4px;
+  display: none;
+}
+.nav-ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.server {
+  width: 15%;
+}
+.Hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+}
+.Hero-content p {
+  color: rgb(255, 255, 255, 0.6);
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.Hero-content h2 {
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: 200;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: boldheader 1s ease-in 1;
+}
+@keyframes boldheader {
+  0% {
+    font-weight: bold;
+    font-size: 2.2rem;
+  }
+  100% {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+}
+.hero-2 {
+  background: #eff1f4;
+}
+.platform-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgb(0, 0, 0, 0.4);
+}
+.platform-section h3 {
+  color: rgb(0, 0, 0, 0.6);
+}
+.server-2 {
+  width: 25%;
+}
+.grid-section {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.lor-box {
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 0, 7rem;
+  color: rgb(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.lor-box:nth-child(1) {
+  grid-column: span 3;
+}
+.lor-box:nth-child(2) {
+  grid-column: span 2;
+}
+.para {
+  margin-left: 5px;
+}
+footer {
+  background-color: #002240;
+  color: #ffffff;
+  height: 150px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.social-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  height: 150px;
+}
+.social-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 200;
+}
+.social-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+.heroc {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+@media (max-width: 760px) {
+  nav {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .items {
+    display: block;
+  }
+  .Hero-section {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .server {
+    width: 40%;
+  }
+  .platform-section {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .server-2 {
+    width: 45%;
+  }
+  .grid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 600px;
+  }
+}
